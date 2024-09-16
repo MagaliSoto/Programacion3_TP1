@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Moda</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Mi Blog de Moda</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="consejos.html">Consejos y Reseñas</a></li>
+                    <li><a href="inspiracion.html">Inspiración</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="section-entrevistas">
+            <h2>Entrevista a Santiago Artemis</h2>
+
+            <video width="320" height="240" controls>
+                <source src="img/entrevistaArtemis.mp4" type="video/mp4" alt="Video Entrevista Artemis">
+                Tu navegador no soporta el elemento de video.
+            </video>
+
+            <div class="div-entrevista-texto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto rerum eveniet praesentium atque et modi obcaecati, alias quam quod facere excepturi ea, consequatur debitis. Quae inventore vitae asperiores fuga dignissimos.</p>
+            </div>
+        </section>
+
+        <img src="img\lineaDecorativa.png" alt="Img Linea Decorativa" class="imagen-linea">
+
+        <section class="section-diy-moda">
+            <h2>DIY Moda</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique in maiores nam saepe culpa quas! Deleniti, deserunt est vero perspiciatis, alias dolores soluta nulla molestiae excepturi porro ex nostrum ipsa.</p>
+            
+            <ul>
+                <li>
+                    <a href="https://www.instructables.com/craft/fashion/" target="_blank">Instructables-DIY Moda</a>: Una sección dedicada a proyectos de moda DIY. Incluye guías detalladas y tutoriales en video para crear ropa y accesorios personalizados.
+                </li>
+                <li>
+                    <a href="https://www.youtube.com/results?search_query=diy+fashion" target="_blank">DIY Fashion-DIY Moda</a>: Una búsqueda en YouTube con una amplia variedad de videos sobre proyectos de moda DIY, desde tutoriales para modificar ropa hasta ideas para nuevos accesorios.
+                </li>
+                <li>
+                    <a href="https://www.brit.co/category/diy-fashion/" target="_blank">Brit+Co-DIY Moda</a>: Brit + Co ofrece una colección de artículos y tutoriales sobre cómo crear y personalizar ropa y accesorios, ideal para quienes buscan ideas creativas y modernas.
+                </li>
+                <li>
+                    <a href="https://www.thesprucecrafts.com/diy-fashion-4173344" target="_blank">The Spruce Crafts-DIY Moda</a>: The Spruce Crafts proporciona tutoriales y consejos para proyectos de moda DIY, incluyendo ideas para actualizar tu guardarropa y técnicas de costura básicas.
+                </li>
+            </ul>
+        </section>
+            
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Mi Blog de Moda. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Seguinos en:</a></li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img/iconoInstagram.jpg" alt=" LinkInstagram" class="imagen-icono">
+                    </a>    
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img src="img/iconoTikTok.jpg" alt="LinkTikTok" class="imagen-icono">
+                    </a>    
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="img/iconoYouTube.jpg" alt="LinkYouTube" class="imagen-icono">
+                    </a>    
+                </li>
+                <li><a href="#" id="contacto-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div id="overlay" style="display: none;"></div>
+    <div id="contacto-formulario" style="display: none;">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="txtNombre" name="nombre" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="txtEmail" name="email" required><br>
+    
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="txtMensaje" name="mensaje" rows="4" required></textarea><br>
+    
+            <input type="submit" value="Enviar">
+            <input type="button" id="btnCancelar" value="Cancelar">
+        </form>
+    </div>
+</body>
+</html>

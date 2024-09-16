@@ -1,0 +1,270 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url('../img/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.overlay {
+    color: white;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.overlay h1, 
+.overlay nav ul li a {
+    text-shadow: 2px 2px 2px rgb(0, 0, 0); 
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+    padding: 0 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+    background-color: rgb(255, 240, 222);
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+#contacto-formulario {
+    position: absolute;
+    width: 350px;
+    max-width: 100%;
+    height: 250px; 
+    padding: 0;
+    border: 1px solid #000000; 
+    top: 180px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 3px;
+    box-sizing: border-box; 
+    margin: 0 auto;
+    background-image: url('../img/fondoForm.jpg');
+    border: 3px solid rgb(255, 228, 195);
+    box-shadow: 5px 5px 2px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    z-index: 1001;
+}
+
+#overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 207, 233, 0.5);
+    display: none;
+    z-index: 1000;
+}
+
+.imagen-autora {
+    position: absolute;
+    left: 50px;
+    bottom: 160px;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.imagen-destacado {
+    position: absolute;
+    right: 220px;
+    bottom: 160px;
+    width: 245px;
+    height: 305px;
+    object-fit: cover;
+}
+
+.imagen-icono {
+    width: 30px;
+    height: 30px;
+}
+
+.imagen-zara {
+    width: 170px;
+    height: 170px;
+}
+
+.imagen-linea {
+    max-width: 18%; 
+    height: auto
+}
+
+.imagen-flores-d,
+.imagen-flores-i {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+}
+
+.imagen-flores-d {
+    top: 150px;
+    right: 0;
+}
+
+.imagen-flores-i {
+    bottom: 100px;
+    left: 0;
+}
+
+.section-entrevistas,
+.section-diy-moda {
+    position: absolute;
+    width: 580px;
+    height: 350px;
+}
+
+.section-entrevistas {
+    left: 35px;
+}
+
+.section-entrevistas video {
+    position: absolute;
+    top: 40px;
+}
+
+.section-diy-moda {
+    right: 35px;
+}
+
+.section-diy-moda ul {
+    position: absolute;
+    top: 110px;
+}
+
+.section-diy-moda p{
+    position: absolute;
+    top: 35px;
+}
+
+.section-entrevistas h2,
+.section-diy-moda h2 {
+    font-style: italic;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.div-entrevista-texto,
+.div-estilos,
+.div-introduccion,
+.div-texto-destacado,
+.div-titulo-destacado {
+    position: absolute;
+    font-style: italic;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+.div-titulo-destacado {
+    right: 130px;
+    top: 150px;
+}
+
+.div-texto-destacado {
+    right: 20px;
+    bottom: 150px;
+    width: 200px;
+}
+
+.div-entrevista-texto {
+    right: 20px;
+    top: 60px;
+    width: 200px;
+}
+
+.div-introduccion {
+    right: 460px;
+    top: 150px;
+    width: 500px; 
+}
+
+.div-estilos {
+    right: 460px;
+    bottom: 140px;
+    width: 500px;
+}
+
+.article-mapa,
+.article-reseña {
+    position: absolute;
+    top: 150px;
+    width: 630px;
+    height: 400px;
+    padding: 10px;
+    font-style: italic;
+    box-sizing: border-box;
+}
+
+.article-mapa {
+    left: 30px;
+}
+
+.article-reseña {
+    right: 30px;
+}
+
+.div-mapa {
+    float: left;
+    margin-right: 20px;
+}
+
+.div-mapa iframe {
+    width: 600px;
+    height: 300px;
+}

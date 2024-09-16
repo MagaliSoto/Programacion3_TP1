@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Blog de Moda</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="overlay">
+            <h1>Mi Blog de Moda</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="consejos.html">Consejos y Reseñas</a></li>
+                    <li><a href="inspiracion.html">Inspiración</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <img src="img\autora.jpg" alt="Img Autora del Blog" class="imagen-autora">
+
+        <div class="div-introduccion">
+            <h2>Introducción</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum libero doloribus dolore culpa beatae eveniet est id! Dolore, accusamus? Ab a culpa voluptatibus consequuntur ipsum laboriosam dignissimos praesentium tenetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum libero doloribus dolore culpa beatae eveniet est id! Dolore, accusamus? Ab a culpa voluptatibus consequuntur ipsum laboriosam dignissimos praesentium tenetur.</p>
+        </div>
+
+        <div class="div-estilos">
+            <h2>Estilo de Temporada</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod harum libero doloribus dolore culpa beatae eveniet est id! Dolore, accusamus? Ab a culpa voluptatibus consequuntur ipsum laboriosam dignissimos praesentium tenetur.</p>
+        </div>
+
+        <section>
+            <h2 class="div-titulo-destacado">Destacado del Mes</h2>
+            <img src="img\destacadoDelMes.jpg" alt="Img Destacado del Mes" class="imagen-destacado">
+            
+            <div class="div-texto-destacado">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam accusamus ducimus ab consequuntur impedit nulla, dolores nam. Architecto quidem assumenda doloribus temporibus ipsum explicabo deleniti, nesciunt culpa ratione aliquid rem, explicabo deleniti, nesciunt culpa ratione aliquid rem, culpa voluptatibus consequuntur ipsum laboriosam dignissimos, consequuntur ipsum laboriosam dignissimos.
+            </div>    
+        </section>
+</main>
+    
+    <footer>
+        <p>&copy; 2024 Mi Blog de Moda. Todos los derechos reservados.</p>
+        <nav>
+            <ul>
+                <li><a href="#">Seguinos en:</a></li>
+                <li>
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="img/iconoInstagram.jpg" alt=" LinkInstagram" class="imagen-icono">
+                    </a>    
+                </li>
+                <li>
+                    <a href="https://www.tiktok.com" target="_blank">
+                        <img src="img/iconoTikTok.jpg" alt="LinkTikTok" class="imagen-icono">
+                    </a>    
+                </li>
+                <li>
+                    <a href="https://www.youtube.com" target="_blank">
+                        <img src="img/iconoYouTube.jpg" alt="LinkYouTube" class="imagen-icono">
+                    </a>    
+                </li>
+                <li><a href="#" id="contacto-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <div id="overlay" style="display: none;"></div>
+    <div id="contacto-formulario" style="display: none;">
+        <h2>Contacto</h2>
+        <form>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="txtNombre" name="nombre" required><br>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="txtEmail" name="email" required><br>
+    
+            <label for="mensaje">Mensaje:</label><br>
+            <textarea id="txtMensaje" name="mensaje" rows="4" required></textarea><br>
+    
+            <input type="submit" value="Enviar">
+            <input type="button" id="btnCancelar" value="Cancelar">
+        </form>
+    </div>
+</body>
+</html>
